@@ -313,7 +313,7 @@ with `@OptIn(RequiresFullKotlinReflection::class)`.
 
 ## Explicit API mode
 
-You should try to keep your API as transparent as possible. To force the API to be transparent, use the [explicit API mode](whatsnew14.md#explicit-api-mode-for-library-authors).
+You should try to keep your API as transparent as possible. To force the API to be transparent, use the [explicit API mode](whatsnew14.md#面向库作者的显式-api-模式).
 
 Kotlin gives you vast freedom in how you can write code. It is possible to omit type definitions, visibility declarations, 
 or documentation. The explicit API mode forces you as a developer to make implicit things explicit. 
