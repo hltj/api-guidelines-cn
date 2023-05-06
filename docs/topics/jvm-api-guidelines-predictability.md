@@ -1,4 +1,4 @@
-[//]: # (title: Predictability)
+[//]: # (title: 可预测性)
 
 This chapter contains the following recommendations:
 * [Use sealed interfaces](#use-sealed-interfaces)
@@ -170,7 +170,7 @@ it's an additional runtime overhead for each call of the `values()` function.
 
 ## Avoid varargs
 
-A `vararg` –[variable number of arguments](functions.md#variable-number-of-arguments-varargs)– works as an array 
+A `vararg` –[variable number of arguments](functions.md#可变数量的参数varargs)– works as an array 
 under the hood, but the array elements are passed individually to the function, not the whole array. This operation is 
 costly because it's copying the same array repeatedly.
 

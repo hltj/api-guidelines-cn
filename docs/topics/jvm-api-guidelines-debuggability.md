@@ -1,4 +1,4 @@
-[//]: # (title: Debuggability)
+[//]: # (title: 可调试性)
 
 This chapter contains considerations about debuggability.
 

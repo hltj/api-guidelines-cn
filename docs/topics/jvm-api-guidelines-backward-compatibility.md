@@ -1,4 +1,4 @@
-[//]: # (title: Backward compatibility)
+[//]: # (title: 反向兼容性)
 
 This chapter contains considerations about [backward compatibility](#backward-compatibility-definition). 
 Here are the "don't do" recommendations:
@@ -49,7 +49,7 @@ well-known principles.
 ### Don't add arguments to existing API functions
 
 Adding non-default arguments to a public API is a breaking change because the existing code won't have enough information 
-to call the updated methods. Adding even [default arguments](functions.md#default-arguments) might also break 
+to call the updated methods. Adding even [default arguments](functions.md#默认参数) might also break 
 your users' code.
 
 Breaking backward compatibility is shown below in an example of two classes: `lib.kt` representing a "library", 
@@ -146,7 +146,7 @@ public final class LibKt {
 
 The method with signature `public static final int fib()` was replaced with a new method with signature 
 `public static final int fib(int)` . At the same time, a proxy method `fib$default` delegates the execution to `fib(int)`. 
-For JVM, it's possible to work around this: you need to add a [`@JvmOverloads`](java-to-kotlin-interop.md#overloads-generation) 
+For JVM, it's possible to work around this: you need to add a [`@JvmOverloads`](java-to-kotlin-interop.md#生成重载) 
 annotation. For multiplatform projects, there is no workaround.
 
 ### Don't use data classes in API
@@ -234,7 +234,7 @@ In addition, if you add a field into the class's body, you have to override the 
 
 ### Don't make return types narrower
 
-Sometimes, especially when you don't use [explicit API mode](whatsnew14.md#explicit-api-mode-for-library-authors), 
+Sometimes, especially when you don't use [explicit API mode](whatsnew14.md#面向库作者的显式-api-模式), 
 a return type declaration can change implicitly. But even if it's not the case, you might want to narrow the signature. 
 For example, if you realize that you need index access to the elements of your collection and want to change 
 the return type from `Collection` to `List`. Widening a return type usually breaks source compatibility; for example, 
@@ -297,7 +297,7 @@ be careful about their backward compatibility.
 ## The @RequiresOptIn annotation
 
 Sometimes, you might want to experiment with your API. In Kotlin, there is a nice way to define that some API is unstable – 
-use the [`@RequiresOptIn` annotation](opt-in-requirements.md#require-opt-in-for-api). However, be aware of the following:
+use the [`@RequiresOptIn` annotation](opt-in-requirements.md#api-要求选择加入). However, be aware of the following:
 1. If you haven't changed something for a long time and it's stable, you should reconsider using the `@RequiresOptIn` annotation.
 2. You may use the `@RequiresOptIn` annotation to define different guarantees to different parts of the API: 
    Preview, Experimental, Internal, Delicate, or Alpha, Beta, RC.
