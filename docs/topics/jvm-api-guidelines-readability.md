@@ -227,7 +227,7 @@ Only properties, overrides and accessors should be members.
 
 Ideally, a reader should be able to tell the purpose of a function argument just by reading code. With `Boolean` 
 arguments, however, this is almost impossible to do, especially if you're not using an IDE (for example, if you're 
-reviewing the code in a version control service). Using [named arguments](functions.md#具名参数) can help clarify 
+reviewing the code in a version control service). Using [named arguments](functions.md#具名实参) can help clarify 
 the purpose of arguments, but for now there is no way to force developers to use them in IDEs. Another option is 
 to create a function that contains the action of the `Boolean` argument and give this function a descriptive name.
 
