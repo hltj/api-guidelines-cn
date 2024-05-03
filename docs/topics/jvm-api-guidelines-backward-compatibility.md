@@ -48,7 +48,7 @@ lesser-known principles.
 ### Don't add arguments to existing API functions
 
 Adding non-default arguments to a public API is a breaking change because the existing code won't have enough information 
-to call the updated methods. Adding even [default arguments](functions.md#默认参数) might also break your 
+to call the updated methods. Adding even [default arguments](functions.md#默认实参) might also break your 
 users' code.
 
 Breaking backward compatibility is shown below in an example of two classes: `lib.kt` representing a "library", 
