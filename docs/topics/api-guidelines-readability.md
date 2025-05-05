@@ -1,4 +1,4 @@
-[//]: # (title: Readability)
+[//]: # (title: 可读性)
 
 Creating a readable API involves more than just writing clean code.
 It requires thoughtful design that simplifies integration and usage.
@@ -14,7 +14,7 @@ However, introducing these customization options through additional function par
 
 Instead of adding more parameters for customization, it's more effective to design an API where different behaviors can
 be composed together.
-For example, in the coroutine Flows API both [buffering](flow.md#buffering) and [conflation](flow.md#conflation) are implemented as separate functions.
+For example, in the coroutine Flows API both [buffering](flow.md#缓冲) and [conflation](flow.md#合并) are implemented as separate functions.
 These can be chained together with more basic operations like [`filter`](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/filter.html) and [`map`](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/map.html), instead of each basic operation accepting parameters to control buffering and conflation.
 
 Another example involves the [Modifiers API in Jetpack Compose](https://developer.android.com/develop/ui/compose/modifiers).
@@ -75,7 +75,7 @@ The following points are worth noting in the context of creating libraries:
   The lambda being passed can be used to configure the entity being created. In the example above the lambda passed to the `routing` function is used to configure the details of the routing.
 * Factory functions that create instances of classes should have the same name as the return type and start with a capital letter.
   You can see this in the sample above with the creation of the `Json` instance.
-  These functions may still take lambda parameters for configuration. For more information, see [Coding conventions](coding-conventions.md#function-names).
+  These functions may still take lambda parameters for configuration. For more information, see [Coding conventions](coding-conventions.md#函数名).
 * As it's not possible to ensure that required properties have been set within the lambda supplied to a builder function
   at compile time, we recommend passing required values as function parameters.
 
@@ -186,7 +186,7 @@ Kotlin defines a set of numeric types that you may use as part of your API. Here
   These types should only be used when the underlying data reliably fits within that type, and calculations are not required.
 * The unsigned integer types `UByte`, `UShort`, `UInt` and `ULong` should be used to utilize the full range of positive
   values available in a given format. They are suitable for scenarios requiring values beyond the range of signed types or
-  for interoperability with native libraries. However, avoid using them in situations where the domain only requires [non-negative integers](unsigned-integer-types.md#non-goals).
+  for interoperability with native libraries. However, avoid using them in situations where the domain only requires [non-negative integers](unsigned-integer-types.md#非目标).
 
 ## Next step
 

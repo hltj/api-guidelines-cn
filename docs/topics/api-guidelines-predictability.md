@@ -1,4 +1,4 @@
-[//]: # (title: Predictability)
+[//]: # (title: 可预测性)
 
 To design a robust and user-friendly Kotlin library, it's essential to anticipate common use cases, allow for extensibility, and enforce proper usage.
 Following best practices for default settings, error handling, and state management ensures a seamless experience

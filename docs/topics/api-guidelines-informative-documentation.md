@@ -1,4 +1,4 @@
-[//]: # (title: Best practices for library authors to create informative documentation)
+[//]: # (title: 库作者创建内容翔实的文档的最佳实践)
 
 The documentation you provide for your library is crucial.
 It can determine whether users investigate your library, adopt it within their projects, and persevere when they encounter difficulties.
@@ -63,7 +63,7 @@ Over time, as you gain a better understanding of your users, refine the personas
 Documentation by example is one of the most cost-effective ways to explain basic concepts to users.
 Whenever possible, provide simple and clear code examples that help to explain or demonstrate the current topic or concept being discussed.
 
-The KDoc documentation format lets you use [inline markup using Markdown](kotlin-doc.md#inline-markup) in your documentation comments.
+The KDoc documentation format lets you use [inline markup using Markdown](kotlin-doc.md#内联标记) in your documentation comments.
 Use inline code snippets in comments to showcase the usage of an API.
 For an example, see the [source code](https://github.com/Kotlin/kotlinx.coroutines/blob/master/kotlinx-coroutines-test/common/src/TestCoroutineDispatchers.kt) and [rendered documentation](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-test/kotlinx.coroutines.test/-unconfined-test-dispatcher.html) of the test dispatchers of the coroutines library.
 
@@ -126,7 +126,7 @@ Typically, calls must be made in a specific sequence, there are multiple options
 and entry points that perform related tasks are used in similar ways.
 For example, functions like `format` and `parse` mirror each other.
 
-Use the [`@see`](kotlin-doc.md#see-identifier) tag or [internal links](kotlin-doc.md#links-to-elements) to make these relationships explicit in your documentation.
+Use the [`@see`](kotlin-doc.md#see-标识符) tag or [internal links](kotlin-doc.md#链接到元素) to make these relationships explicit in your documentation.
 This helps the reader by enabling them to [chunk](https://en.wikipedia.org/wiki/Chunking_(psychology)) the information together, building a better-integrated mental map of the library.
 
 ## Be self-contained where possible

@@ -1,4 +1,4 @@
-[//]: # (title: Simplicity)
+[//]: # (title: 简单)
 
 The fewer concepts your users need to understand and the more explicitly these are communicated, the simpler their mental
 model is likely to be. This can be achieved by limiting the number of operations and abstractions in the API.
@@ -10,7 +10,7 @@ In the next part of the guide, we'll discuss some guidelines for promoting simpl
 
 ## Use explicit API mode
 
-We recommend using the [explicit API mode](whatsnew14.md#explicit-api-mode-for-library-authors) feature of the Kotlin compiler,
+We recommend using the [explicit API mode](whatsnew14.md#面向库作者的显式-api-模式) feature of the Kotlin compiler,
 which forces you to explicitly state your intentions when you're designing the API for your library.
 
 With explicit API mode, you must:

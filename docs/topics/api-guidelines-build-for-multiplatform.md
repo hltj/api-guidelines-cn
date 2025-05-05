@@ -1,4 +1,4 @@
-[//]: # (title: Building a Kotlin library for multiplatform)
+[//]: # (title: 构建适用于多平台的 Kotlin 库)
 
 When creating a Kotlin library, consider building and [publishing it with support for Kotlin Multiplatform](multiplatform-publish-lib.md).
 This broadens the target audience of your library, making it compatible with projects targeting multiple platforms.
@@ -8,7 +8,7 @@ The following sections provide guidelines to help you build a Kotlin Multiplatfo
 ## Maximize your reach
 
 To make your library available to the largest number of projects as a dependency,
-aim to support as many [target platforms](multiplatform-dsl-reference.md#targets) of Kotlin Multiplatform as possible.
+aim to support as many [target platforms](multiplatform-dsl-reference.md#目标) of Kotlin Multiplatform as possible.
 
 If your library doesn't support the platforms used by a multiplatform project,
 whether it's a library or an application, it becomes difficult for that project to depend on your library.

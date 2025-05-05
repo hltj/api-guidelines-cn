@@ -1,4 +1,4 @@
-[//]: # (title: Minimizing mental complexity overview)
+[//]: # (title: 最小化心理复杂性概述)
 
 Users need to quickly and accurately build a mental model of your library's functions and abstractions before using it. 
 The best way to achieve this is by minimizing the amount of complexity they encounter.

@@ -1,4 +1,4 @@
-[//]: # (title: Backward compatibility guidelines for library authors)
+[//]: # (title: 面向库作者的反向兼容性指南)
 
 The most common motivation for creating a library is to expose functionality to a wider community.
 This community might be a single team, a company, a particular industry, or a technology platform.
@@ -53,7 +53,7 @@ The validator has [experimental support for validating KLibs](https://github.com
 
 ## Specify return types explicitly
 
-As discussed in the [Kotlin coding guidelines](coding-conventions.md#coding-conventions-for-libraries),
+As discussed in the [Kotlin coding guidelines](coding-conventions.md#库的编码规范),
 you should always explicitly specify function return types and property types within the API. See also the section about [Explicit API mode](api-guidelines-simplicity.md#use-explicit-api-mode).
 
 Consider the following example, where the library author creates a `JsonDeserializer` and, for convenience, uses an extension function to associate it with the `Int` type:
@@ -89,7 +89,7 @@ Existing functionality will continue to work, with the added ability to deserial
 
 Adding non-default arguments to a public API breaks both binary and source compatibility,
 as users are required to provide more information on an invocation than before.
-However, even adding [default arguments](functions.md#default-arguments) can break compatibility.
+However, even adding [default arguments](functions.md#默认实参) can break compatibility.
 
 For example, imagine you have the following function in `lib.kt`:
 

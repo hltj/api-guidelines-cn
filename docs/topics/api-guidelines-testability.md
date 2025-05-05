@@ -1,4 +1,4 @@
-[//]: # (title: Testability)
+[//]: # (title: 可测试性)
 
 In addition to [testing your library](api-guidelines-consistency.md#maintain-conventions-and-quality), ensure that code using your library is also testable.
 

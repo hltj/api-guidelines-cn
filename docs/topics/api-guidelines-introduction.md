@@ -1,4 +1,4 @@
-[//]: # (title: Introduction to library authors' guidelines)
+[//]: # (title: 库作者指南简介)
 
 This guide contains a summary of best practices and ideas to consider when designing libraries.
 
